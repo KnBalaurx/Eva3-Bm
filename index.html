@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina de registro</title>
+    <link rel="stylesheet" href="./assets/script/style.css">
+    <script src="./assets/js/script.js"></script>
 </head>
 <body>
     
+    <button id="btnOsc">Cambiar contraste</button>
+
+    <div id="formu" class="divs">
+        <form >
+            <h1 class="fn">Formulario de Registro</h1>
+            <p class="fn">Ingresa tus datos para solicitud de beca</p>
+
+            <label for="nom" class="fn">Nombre:</label>
+            <input type="text" name="nom" id="nom" placeholder="John">
+
+            <label for="apellido" class="fn">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Doe">
+
+            <label for="rut" class="fn">Rut:</label>
+            <input type="text" name="rut" id="rut" placeholder="12345678-9">
+
+            <label for="correo" class="fn">Correo:</label>
+            <input type="email" name="correo" id="correo" placeholder="aaaaaaa@gmail.com">
+
+            <label for="fono" class="fn">Telefono:</label>
+            <input type="tel" name="fono" id="fono" placeholder="912345678">
+
+            <label for="RegistroSc" class="fn">Registro social de hogares:</label>
+            <select name="RegistroSc" id="RegistroSc">
+                <option value="30%">Menos o 30%</option>
+                <option value="50%">Menos o 50%</option>
+                <option value="70%">Menos o 70%</option>
+                <option value="80%">Mas o 80%</option>
+            </select>
+
+            <div id="rd">
+                <label for="edad" class="fn">Edad:</label>
+                <input type="radio" name="edad" id="-18">
+                <label for="-18" class="fn">-18</label>
+                <input type="radio" name="edad" id="+18">
+                <label for="+18" class="fn">+18</label>
+            </div>
+
+            <label for="info" class="fn">Informacion adicional:</label>
+            <textarea name="info" id="info" cols="25" rows="8" placeholder="Escribe la informacion a destacar aqui................."></textarea>
+
+            <button id="btnEnviar" class="fn">Enviar</button>
+
+        </form>
+    </div>
+
 </body>
 </html>

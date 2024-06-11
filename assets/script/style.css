@@ -1,0 +1,54 @@
+
+#formu {
+    background-color: gray;
+    width: 27%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#formu h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#formu p{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: overline;
+}
+#formu form{  
+    display: flex;
+    flex-direction: column;
+}
+#formu label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+#formu input,select, textarea{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-width: 1px;
+    border-radius: 5px;
+}
+#formu button{
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#rd{
+    margin-top: 10px;
+}
+/*---------------------------------------------------------*/
+
+
+.osc-body{
+    background-color: black;
+    color: white;
+}
+
+.fuente{
+    font-family: 'Times New Roman', Times, serif;
+}
