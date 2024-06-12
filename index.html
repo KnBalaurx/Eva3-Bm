@@ -4,55 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de registro</title>
-    <link rel="stylesheet" href="./assets/script/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js"></script>
 </head>
 <body>
     
     <button id="btnOsc">Cambiar contraste</button>
+    <button id="btnFont">Cambiar fuente</button>
+    
 
-    <div id="formu" class="divs">
-        <form >
+    <div id="formu" >
+            <form action="">
             <h1 class="fn">Formulario de Registro</h1>
-            <p class="fn">Ingresa tus datos para solicitud de beca</p>
+            <p  class="fn">Ingresa tus datos para solicitud de beca</p>
 
-            <label for="nom" class="fn">Nombre:</label>
+            <label for="nom" class="fn">Nombre:<span>*</span></label>
             <input type="text" name="nom" id="nom" placeholder="John">
+            <p class="noDisp" id="pnom">**Debes ingresar tu nombre**</p>
 
-            <label for="apellido" class="fn">Apellido:</label>
+            <label for="apellido" class="fn">Apellido:<span>*</span></label>
             <input type="text" name="apellido" id="apellido" placeholder="Doe">
+            <p class="noDisp" id="papellido">Debes ingresar tu apellido</p>
 
-            <label for="rut" class="fn">Rut:</label>
+            <label for="rut" class="fn">Rut:<span>*</span></label>
             <input type="text" name="rut" id="rut" placeholder="12345678-9">
+            <p class="noDisp" id="prut">Debes ingresar tu rut</p>
 
             <label for="correo" class="fn">Correo:</label>
             <input type="email" name="correo" id="correo" placeholder="aaaaaaa@gmail.com">
 
-            <label for="fono" class="fn">Telefono:</label>
+            <label for="fono" class="fn">Telefono:<span>*</span></label>
             <input type="tel" name="fono" id="fono" placeholder="912345678">
+            <p class="noDisp" id="pfono">Debes ingresar tu telefono</p>
 
-            <label for="RegistroSc" class="fn">Registro social de hogares:</label>
-            <select name="RegistroSc" id="RegistroSc">
+            <label for="RegistroSc" class="fn">Registro social de hogares:<span>*</span></label>
+            <select name="RegistroSc" id="RegistroSc" re>
                 <option value="30%">Menos o 30%</option>
                 <option value="50%">Menos o 50%</option>
                 <option value="70%">Menos o 70%</option>
                 <option value="80%">Mas o 80%</option>
             </select>
+            <p class="noDisp" id="pRegistroSc">Debes ingresar una opcion</p>
 
             <div id="rd">
-                <label for="edad" class="fn">Edad:</label>
-                <input type="radio" name="edad" id="-18">
+                <label for="edad" class="fn">Edad:<span>*</span></label>
+                <input type="radio" name="edad" id="edad" class="-18">
                 <label for="-18" class="fn">-18</label>
-                <input type="radio" name="edad" id="+18">
+                <input type="radio" name="edad" id="edad" class="+18">
                 <label for="+18" class="fn">+18</label>
+                <p class="noDisp" id="pedad">Debes ingresar una opcion</p>
             </div>
 
             <label for="info" class="fn">Informacion adicional:</label>
-            <textarea name="info" id="info" cols="25" rows="8" placeholder="Escribe la informacion a destacar aqui................."></textarea>
+            <textarea name="info" id="info" cols="25" rows="8" placeholder="Escribe la informacion a destacar aqui.................">
+            </textarea>
 
-            <button id="btnEnviar" class="fn">Enviar</button>
-
+            <button id="btnEnviar" type="button">Enviar</button>
         </form>
+
     </div>
 
 </body>
