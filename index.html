@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de registro</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/firebase.js"></script>
+
 </head>
 <body>
     
     <button id="btnOsc">Cambiar contraste</button>
-    <button id="btnFont">Cambiar fuente</button>
+    <button id="btnFont">Cambiar fuente y tamaño</button>
     
 
     <div id="formu" >
-            <form action="">
+            <form id="form">
             <h1 class="fn">Formulario de Registro</h1>
             <p  class="fn">Ingresa tus datos para solicitud de beca</p>
 
@@ -24,27 +26,18 @@
 
             <label for="apellido" class="fn">Apellido:<span>*</span></label>
             <input type="text" name="apellido" id="apellido" placeholder="Doe">
-            <p class="noDisp" id="papellido">Debes ingresar tu apellido</p>
+            <p class="noDisp" id="papellido">**Debes ingresar tu apellido**</p>
 
             <label for="rut" class="fn">Rut:<span>*</span></label>
-            <input type="text" name="rut" id="rut" placeholder="12345678-9">
-            <p class="noDisp" id="prut">Debes ingresar tu rut</p>
+            <input type="text" name="rut" id="rut" placeholder="123456789">
+            <p class="noDisp" id="prut">**Debes ingresar tu rut**</p>
 
             <label for="correo" class="fn">Correo:</label>
             <input type="email" name="correo" id="correo" placeholder="aaaaaaa@gmail.com">
 
             <label for="fono" class="fn">Telefono:<span>*</span></label>
             <input type="tel" name="fono" id="fono" placeholder="912345678">
-            <p class="noDisp" id="pfono">Debes ingresar tu telefono</p>
-
-            <label for="RegistroSc" class="fn">Registro social de hogares:<span>*</span></label>
-            <select name="RegistroSc" id="RegistroSc" re>
-                <option value="30%">Menos o 30%</option>
-                <option value="50%">Menos o 50%</option>
-                <option value="70%">Menos o 70%</option>
-                <option value="80%">Mas o 80%</option>
-            </select>
-            <p class="noDisp" id="pRegistroSc">Debes ingresar una opcion</p>
+            <p class="noDisp" id="pfono">**Debes ingresar tu telefono**/p>
 
             <div id="rd">
                 <label for="edad" class="fn">Edad:<span>*</span></label>
@@ -52,17 +45,41 @@
                 <label for="-18" class="fn">-18</label>
                 <input type="radio" name="edad" id="edad" class="+18">
                 <label for="+18" class="fn">+18</label>
-                <p class="noDisp" id="pedad">Debes ingresar una opcion</p>
+                <p class="noDisp" id="pedad">**Debes ingresar una opcion**</p>
             </div>
+            <label for="RegistroSc" class="fn">Registro social de hogares:<span>*</span></label>
+            <select name="RegistroSc" id="RegistroSc" re>
+                <option value="30%">Menos o 30%</option>
+                <option value="50%">Menos o 50%</option>
+                <option value="70%">Menos o 70%</option>
+                <option value="80%">Mas o 80%</option>
+            </select>
 
             <label for="info" class="fn">Informacion adicional:</label>
-            <textarea name="info" id="info" cols="25" rows="8" placeholder="Escribe la informacion a destacar aqui.................">
-            </textarea>
-
+            <textarea name="info" id="info" cols="25" rows="8" placeholder="Escribe la informacion a destacar aqui................."></textarea>
+            <button type="button" id="btnAct">Actualizar</button>
+            <button type="button" id="btnCan">Cancelar</button>
             <button id="btnEnviar" type="button">Enviar</button>
         </form>
-
     </div>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Rut</th>
+                <th>Correo</th>
+                <th>telefono</th>
+                <th>RegistroSc</th>
+                <th>RangoEdad</th>
+                <th>Informacion Adicional</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+
+        </tbody>
+    </table>
+
 </body>
-</html>
+</html>        

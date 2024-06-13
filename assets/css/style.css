@@ -1,19 +1,18 @@
 
 #formu {
     background-color: gray;
-    width: 320px;
+    width: 500px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #formu h1{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     margin-bottom: 0;
 }
 #formu p.fn{
-    font-size: 15px;
     text-align: center;
     text-decoration: overline;
 }
@@ -24,7 +23,6 @@
 #formu label{
     margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 15px;
 }
 #formu input, select, textarea{
     padding-top: 7px;
@@ -46,18 +44,32 @@
     display: none;
 }
 
+table{
+    background-color: gray;
+    width: 700px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+th{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
 
-
-
+#btnAct,#btnCan{
+    display: none;
+}
 /*---------------------------------------------------------*/
 
 .osc-body{
     background-color: black;
     color: white;
 }
-
 .fuente{
     font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 .siDisp{
     display: block;
@@ -65,10 +77,9 @@
     color: red;
 }
 
-.style-vacio{
-    border-color: red;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-width: 1px;
-    border-radius: 5px;;
+.btnBlock{
+    display: block;
+}
+.btnNone{
+    display: none;
 }
